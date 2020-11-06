@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 function App() {
-  const state = useState();
+  const [count, setCount] = useState(0);
 
   function increase() {
-    //count++;
+    setCount(12);
   }
 
   return (
     <div className="container">
-      <h1>0</h1>
+      <h1>{count}</h1>
       <button onClick={increase}>+</button>
     </div>
   );
